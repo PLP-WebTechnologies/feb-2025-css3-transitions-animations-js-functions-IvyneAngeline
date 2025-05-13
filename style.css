@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+#animateBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Animation Box */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  margin: 20px auto;
+  opacity: 1;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Animation triggered by JavaScript */
+.box.animate {
+  transform: rotate(360deg);
+  opacity: 0.5;
+}
+
+/* Status message */
+#status {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
